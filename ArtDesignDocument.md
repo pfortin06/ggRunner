@@ -63,7 +63,7 @@ Les éléments **inconditionnels** sont les éléments auxquels nous avons pens�
 * Plateforme primaire
 * Plateformes secondaires
 * Un ou plusieurs Arrière plan
-* Élements du UI
+* Élements du UI/GUI
 * Élements des menus
 * cinématique de transition vers le jeu
 
@@ -83,3 +83,8 @@ Les éléments **inconditionnels** sont les éléments auxquels nous avons pens�
 * Des ajouts esthétiques au "Runner"
   * Armures, chapeaux ...
 * Élements favorable (ex: powerup, speed boost)
+
+#Maquette
+Voici une maquette du GUI qui poura vous servir de guide
+![alt text](https://github.com/pfortin06/ggRunner/blob/master/GUIRunner.png)  
+*Ici, les boutons avec les flêches reprensentent les actions de base (sauté, accroupir) et les boutons avec les "P" les 3 pouvoirs*
