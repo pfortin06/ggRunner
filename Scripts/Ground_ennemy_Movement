@@ -1,0 +1,27 @@
+using UnityEngine;
+using System.Collections;
+
+public class Ground_ennemy_Movement : MonoBehaviour {
+	private float moveSpeed =10.0f;
+	private float startTime;
+	private float timeElapsed;
+	// Use this for initialization
+	void Start () {
+		startTime = Time.time;
+	}
+
+
+
+	// Update is called once per frame
+	void Update () {
+
+		timeElapsed = Time.time - startTime;
+		if (timeElapsed > 3) {
+			moveSpeed *= -1;
+			startTime = Time.time;
+				}
+
+		rigidbody2D.velocity = new Vector2 (moveSpeed, 0);
+
+	}
+}
