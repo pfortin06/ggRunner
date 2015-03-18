@@ -4,9 +4,9 @@ using System.Collections;
 public class CharacterMovement : MonoBehaviour {
 	private Vector3 moveDirection;
 	private Vector3 actualPosition;
-	private float moveSpeed = 3f;
+	public float moveSpeed = 5f;
 	private Vector3 moveInThisDirection;
-	private float jumpingForce = 800f;
+	public float jumpingForce = 1000f;
 	private bool canJump= false;
 	private bool canDoubleJump = false;
 	public bool dashing = false;

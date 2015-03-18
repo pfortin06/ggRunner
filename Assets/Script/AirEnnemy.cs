@@ -10,7 +10,7 @@ public class AirEnnemy : MonoBehaviour {
 	private Vector3 newDirection;
 	Vector3 playerPosition;
 	void Start () {
-		moveDirection = new Vector3 (-1, 0, 0);
+		moveDirection = new Vector3 (0, 0, 0);
 		moveAfterAttack = new Vector3 (-1, 1, 0);
 	}
 	int inRange()
@@ -39,7 +39,7 @@ public class AirEnnemy : MonoBehaviour {
 			newDirection = playerPosition - actualPosition;
 			transform.position = Vector3.Lerp (actualPosition, newDirection, Time.deltaTime);
 		}else if (inRange () == 2) {
-			moveInThisDirection = new Vector3(playerPosition.x,-4)  + actualPosition;
+			moveInThisDirection = new Vector3(playerPosition.x,-4)  - actualPosition;
 			transform.position = Vector3.Lerp (actualPosition, moveInThisDirection, Time.deltaTime);
 		}else if (inRange () == 3) {
 			moveInThisDirection = moveAfterAttack * moveSpeed + actualPosition;
