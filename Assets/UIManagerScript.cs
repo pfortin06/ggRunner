@@ -7,4 +7,9 @@ public class UIManagerScript : MonoBehaviour {
 	{
 		Application.LoadLevel ("stage1");
 	}
+
+	public void modifie()
+	{
+
+	}
 }
