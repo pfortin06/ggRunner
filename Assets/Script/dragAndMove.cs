@@ -17,8 +17,6 @@ public class dragAndMove : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        XAxisIsActive = true;
-        YAxisIsActive = true;
         magicIsActive = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().state;
     }
 

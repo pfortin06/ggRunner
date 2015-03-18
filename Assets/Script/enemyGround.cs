@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class enemyGround : MonoBehaviour {
-	private float moveSpeed =-3.0f;
+	public float moveSpeed =-3.0f;
 	private float startTime;
 	private float timeElapsed;
 	// Use this for initialization
