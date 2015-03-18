@@ -27,6 +27,21 @@ public class CharacterMovement : MonoBehaviour {
 		state = i;
 	}
 
+	public void up_btn_manager()
+	{
+		if (canJump) {
+			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0f, jumpingForce));
+			canJump = false;
+			if(state == 2){
+				canDoubleJump = true;
+			}
+		}
+		else if (canDoubleJump && state == 2) {
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpingForce));
+			canDoubleJump = false;
+		}
+	}
+
 	public void OnTriggerEnter2D(Collider2D coll)
 	{
 
